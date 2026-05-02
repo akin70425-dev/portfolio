@@ -22,7 +22,7 @@ function App() {
   return (
 
    <>
-  <div className="container-fluid hero">
+  <div className="container-fluid hero" id='home'>
     <div className="row py-3 align-items-center">
       <div className="col-12 col-lg-7 d-flex justify-content-between align-items-center">
       <img src="por-logo-removebg-preview.png" alt="" height={50} width={50} className='ms-3'/>
@@ -36,10 +36,10 @@ function App() {
       </div>
       <div className={`col-12 col-lg-5  ${open ? "d-block" : "d-none"} d-lg-flex justify-content-center `}>
         <ul className="d-flex flex-column flex-lg-row align-items-lg-center list-unstyled m-0 mt-3 ms-3 mt-lg-0">
-          <li className="me-lg-5 mb-2 mb-lg-0">Home</li>
-          <li className="me-lg-5 mb-2 mb-lg-0">Project</li>
-          <li className="me-lg-5 mb-2 mb-lg-0">about</li>
-          <li className=" mb-2 mb-lg-0">contact</li>
+          <li className="me-lg-5 mb-2 mb-lg-0"><a href='#home'>Home</a></li>
+          <li className="me-lg-5 mb-2 mb-lg-0"><a href='#project'>Project</a></li>
+          <li className="me-lg-5 mb-2 mb-lg-0"><a href='#about'>About</a></li>
+          <li className=" mb-2 mb-lg-0"><a href='#contact'>Contact</a></li>
         </ul>
       </div>
       <div className='row' >
@@ -74,7 +74,7 @@ function App() {
   </div>
 
 
-  <div className="project-page pt-5 pb-5 ">
+  <div className="project-page pt-5 pb-5 " id='project'>
       <h1 className='ms-5'>Projects</h1>
       <div className="container-fulied ms-5 me-5  mt-4">
   <div className="row gx-4">
@@ -83,7 +83,7 @@ function App() {
         return <div className="col-lg-3 col-md-4 col-sm-6 mb-4">
       <div className="card shadow cards">
         
-        <img src={project.image} className="card-img-top" alt="Netflix Clone"  />
+        <img src={project.image} className="card-img-top imagep" alt="Netflix Clone"  />
 
         <div className="card-body text-center">
           <h5 className="card-title">{project.title}</h5>
@@ -109,7 +109,7 @@ function App() {
 </div>  
     </div>
 
-   <section className=" container-fulied glass-about pt-5 pb-5">
+   <section className=" container-fulied glass-about pt-5 pb-5" id='about'>
       <div className="row ms-3 me-3">
        
         <div className="col-lg-6 col-md-6 col-12 glass-card  mt-5 mb-5">
@@ -157,7 +157,7 @@ function App() {
     </section>
 
 
-    <footer className="footer-container-fulied ">
+    <footer className="footer-container-fulied " id='contact'>
       <div className="glass-footer">
         <div className="row">
           <div className="col-5">
@@ -168,15 +168,15 @@ function App() {
         
             <div className="col-4 footer-links">
               <h2>Quick link</h2>
-          <a href="#">Home</a>
-          <a href="#">Projects</a>
-          <a href="#">About</a>
-          <a href="#">Contact</a>
+          <a href="#home">Home</a>
+          <a href="#project">Projects</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
         
           </div>
           <div className="col-3 mt-3 read">
             <h2>Read me</h2>
-            <a href="" target="_blank" class="btn btn-danger" >
+            <a href="akin.pdf" target="_blank" class="btn btn-danger" >
   View Resume
 </a>
           </div>

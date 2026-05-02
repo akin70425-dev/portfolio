@@ -297,3 +297,10 @@ font-weight:bolder;
   font-size: 9px;
 }
 }
+li a{
+  text-decoration: none;
+  color: #ffffff;
+}
+.imagep{
+  max-height: 350px;
+}
