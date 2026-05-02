@@ -176,7 +176,7 @@ function App() {
           </div>
           <div className="col-3 mt-3 read">
             <h2>Read me</h2>
-            <a href="akin.pdf" target="_blank" class="btn btn-danger" >
+            <a href="" target="_blank" class="btn btn-danger" >
   View Resume
 </a>
           </div>
